@@ -5,8 +5,7 @@ const Readlist = () => {
     const storeBooks = getReadBooks();
     console.log(storeBooks);
     return (
-        <div>
-            <h1>readlist</h1>
+        <div className="">
             {
                 storeBooks.map((book,idx) => <Rcard key = {idx} book={book}></Rcard>)
             }

@@ -12,6 +12,8 @@ import Error from './Error/Error';
 import ListBooks from './components/ListBooks/ListBooks';
 import PageToRead from './components/PageToRead/PageToRead';
 import Click from './components/Home/Click';
+import Coming from './components/Coming/Coming';
+import Question from './components/Question/Question';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +39,15 @@ const router = createBrowserRouter([
         element:<Click></Click>,
         loader:()=> fetch('./books.json')
       },
+      {
+        path:'/coming',
+        element:<Coming></Coming>,
+        loader:()=> fetch('../public/coming.json'),
+      },
+      {
+        path:'/question',
+        element:<Question></Question>,
+      }
     ]
   },
 ]);

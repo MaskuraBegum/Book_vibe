@@ -16,6 +16,14 @@ const Header = () => {
                 className={({ isActive }) => {
                     return isActive ? "text-blue-500 border-2 border-green-500 hover:bg-green-300" : "text-black";
                 }}>Pages to Read</NavLink></li>
+            <li><NavLink to="/coming"
+                className={({ isActive }) => {
+                    return isActive ? "text-blue-500 border-2 border-green-500 hover:bg-green-300" : "text-black";
+                }}>Coming Soon</NavLink></li>
+            <li><NavLink to="/question"
+                className={({ isActive }) => {
+                    return isActive ? "text-blue-500 border-2 border-green-500 hover:bg-green-300" : "text-black";
+                }}>Any question?</NavLink></li>
     </>
     return (
         <div className="font-class">

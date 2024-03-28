@@ -9,7 +9,7 @@ const getReadBooks = ()=>{
 }
 const saveReadBooks = ({book})=>{
     const storeReadBooks = getReadBooks();
-    const exists = storeReadBooks.find(Id => Id == book.bookId);
+    const exists = storeReadBooks.find(Id => Id.bookId == book.bookId);
     
     if(!exists){
         storeReadBooks.push(book);

@@ -5,8 +5,7 @@ import Rcard from "./Rcard";
 const Wishlist = () => {
     const storeWish = getWishBooks();
     return (
-        <div>
-            <h1>wishlist</h1>
+        <div className="">
             {
                 storeWish.map((book,idx) => <Rcard key = {idx} book={book}></Rcard>)
             }

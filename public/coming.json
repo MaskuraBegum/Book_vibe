@@ -1,0 +1,33 @@
+[
+    {
+      "bookName": "The Midnight Library",
+      "author": "Matt Haig",
+      "image": "https://i.ibb.co/0QCzh7H/505b053755f513348d36ed15ca616075.jpg",
+      "arrivalTime": "2024-04-15"
+    },
+    {
+      "bookName": "Project Hail Mary",
+      "author": "Andy Weir",
+      "image": "https://i.ibb.co/MSsJP7R/81z-D9ka-VW9-L-AC-UL600-SR600-600.jpg",
+      "arrivalTime": "2024-05-20"
+    },
+    {
+      "bookName": "The Rose Code",
+      "author": "Kate Quinn",
+      "image": "https://i.ibb.co/6NCdSY7/download-3.jpg",
+      "arrivalTime": "2024-06-10"
+    },
+    {
+      "bookName": "Klara and the Sun",
+      "author": "Kazuo Ishiguro",
+      "image": "https://i.ibb.co/86wWgD3/54120408.jpg",
+      "arrivalTime": "2024-07-05"
+    },
+    {
+      "bookName": "The Push",
+      "author": "Ashley Audrain",
+      "image": "https://i.ibb.co/rbbvrh1/download-4.jpg",
+      "arrivalTime": "2024-08-15"
+    }
+  ]
+  

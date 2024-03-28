@@ -30,7 +30,7 @@ const Click = () => {
             if(!list){
                 setlist(!list)
                 toast('wish added')
-                saveWishBooks({book,bookId});
+                saveWishBooks({book});
             }
             else{
                 toast('its already in wishlist')
