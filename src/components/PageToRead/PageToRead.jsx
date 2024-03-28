@@ -72,7 +72,7 @@ export default function App() {
         <div className='flex justify-center items-center mt-10'>
             <div>
                 <BarChart
-                    width={800}
+                    width={900}
                     height={300}
                     data={storeBooks}
                     margin={{
