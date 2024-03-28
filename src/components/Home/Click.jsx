@@ -39,7 +39,7 @@ const Click = () => {
             
         }
         else{
-            toast('you read this book')
+            toast('you read this book cannot be added to the wishlist')
         }
     }
     return (
