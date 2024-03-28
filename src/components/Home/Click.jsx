@@ -1,12 +1,39 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Tag from "./Tag";
 import './Home.css'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useState } from "react";
+import { saveReadBooks, saveWishBooks } from "../Utility/Utility";
 
 const Click = () => {
     const details = useLoaderData();
     const { bookId } = useParams();
     const book = details.find(detail => detail.bookId == bookId)
+    const [read, setread] = useState(false)
+    const[wish, setwish] = useState(true)
+    const handleToast = ()=>{
+        if(!read){
+            setread(!read);
+            saveReadBooks({book});
+            toast("You have read the book");
+            
+        }
+        else{
+            toast('you already read this book')
+        }
+        
+    }
+    const handlewish = ()=>{
+        if(wish && !read){
+            setwish(!wish)
+            saveWishBooks({book});
+            toast('wish added')
+        }
+        else{
+            toast('you read this book')
+        }
+    }
     return (
         <div>
             <div className="hero min-h-screen ">
@@ -32,9 +59,9 @@ const Click = () => {
                             <p>Rating</p><span className="font-semibold">: {book.rating}</span>
                         </div>
                         <div className="my-8">
-                            <button className="btn border-blue-500 mr-6 px-6">Read</button>
-                            <button className="btn bg-blue-500 px-4 text-white">Wishlist</button>
-
+                            <button onClick={handleToast} className="btn border-blue-500 mr-6 px-6">Read</button>
+                            <button onClick={handlewish} className="btn bg-blue-500 px-4 text-white">Wishlist</button>
+                            <ToastContainer />
                         </div>
                     </div>
                 </div>
