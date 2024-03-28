@@ -10,7 +10,7 @@ const Ccard = ({here}) => {
                     <p className="text-2xl">By:{author}</p>
                     <p className="text-xl">Arrival Time: <span className="text-orange-500">{arrivalTime}</span></p>
                 </div>
-                <figure><img src={image} alt="Shoes"  className="w-[400px] h-[350px]"/></figure>
+                <figure><img src={image} alt="image of book"  className="w-[400px] h-[350px]"/></figure>
             </div>
         </div>
     );
