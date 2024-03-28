@@ -12,6 +12,7 @@ const Click = () => {
     const book = details.find(detail => detail.bookId == bookId)
     const [read, setread] = useState(false)
     const[wish, setwish] = useState(true)
+    const [list,setlist] = useState(false)
     const handleToast = ()=>{
         if(!read){
             setread(!read);
@@ -26,9 +27,16 @@ const Click = () => {
     }
     const handlewish = ()=>{
         if(wish && !read){
-            setwish(!wish)
-            saveWishBooks({book});
-            toast('wish added')
+            if(!list){
+                setlist(!list)
+                toast('wish added')
+                saveWishBooks({book,bookId});
+            }
+            else{
+                toast('its already in wishlist')
+            }
+            
+            
         }
         else{
             toast('you read this book')

@@ -24,9 +24,10 @@ const getWishBooks = ()=>{
     return [];
 }
 const saveWishBooks =({book}) =>{
-    console.log(book);
+    
     const storeWishBooks = getWishBooks();
-    const exists = storeWishBooks.find(Id => Id == book.bookId);
+    const exists = storeWishBooks.find(Id => Id.bookId == book.bookId);
+    console.log(exists)
     
     if(!exists){
         storeWishBooks.push(book);
