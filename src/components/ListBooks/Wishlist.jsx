@@ -5,19 +5,19 @@ import Rcard from "./Rcard";
 const Wishlist = ({displayw,displaywt,displaywp}) => {
     const storeWish = getWishBooks();
     let render;
-    if(!displayw){
+    if(displayw){
         render = storeWish.sort((a,b)=> b.rating - a.rating)
     }
     else{
         render = storeWish;
     }
-    if(!displaywt){
+    if(displaywt){
         render = storeWish.sort((a,b)=> b.totalPages - a.totalPages)
     }
     else{
         render = storeWish;
     }
-    if(!displaywp){
+    if(displaywp){
         render = storeWish.sort((a,b)=> b.yearOfPublishing - a.yearOfPublishing)
     }
     else{

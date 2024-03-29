@@ -1,24 +1,31 @@
 
 import { getReadBooks } from "../Utility/Utility";
 import Rcard from "./Rcard";
-const Readlist = ({displayr,displayrt}) => {
+const Readlist = ({displayr,displayrt,displayrp}) => {
+    console.log(displayr,displayrp,displayrt);
     const storeBooks = getReadBooks();
     let render;
-    if(!displayr){
+    if(displayr){
          render = storeBooks.sort((a,b) => b.rating - a.rating);
     }
     else{
         render = storeBooks
     }
-    if(!displayrt){
+    if(displayrt){
         render = storeBooks.sort((a,b)=> b.totalPages - a.totalPages)
+    }
+    else{
+        render = storeBooks;
+    }
+    if(displayrp){
+        render = storeBooks.sort((a,b)=> b.yearOfPublishing - a.yearOfPublishing)
     }
     else{
         render = storeBooks;
     }
 
 
-    console.log('display', !displayr);
+    console.log('display', displayr);
     console.log( 'the sort',render);
     // console.log(storeBooks);
     return (

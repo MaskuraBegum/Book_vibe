@@ -4,7 +4,7 @@ const Barchart = () => {
     
     return (
         <div>
-            
+            here is noting
         </div>
     );
 };

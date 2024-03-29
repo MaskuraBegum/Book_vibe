@@ -7,22 +7,24 @@ import { getReadBooks, saveReadBooks } from "../Utility/Utility";
 
 
 const ListBooks = () => {
-    const [displayr, setdisplayr] = useState(true);
-    const [displayrt, setdisplayrt] = useState(true);
-    const [displayrp, setdisplayrp] = useState(true);
-     const [displayw,setdisplayw] = useState(true);
-     const [displaywt, setdisplaywt] = useState(true)
-     const [displaywp, setdisplaywp] = useState(true)
+    const [displayr, setdisplayr] = useState(false);
+    const [displayrt, setdisplayrt] = useState(false);
+    const [displayrp, setdisplayrp] = useState(false);
+     const [displayw,setdisplayw] = useState(false);
+     const [displaywt, setdisplaywt] = useState(false)
+     const [displaywp, setdisplaywp] = useState(false)
     const handlebyrating= state =>{
-            setdisplayr(state);
-            setdisplayw(state);
-            setdisplayrp(state); 
-        
+            setdisplayr(!state);
+            setdisplayw(!state);   
     }
     const handlebytotalpage = state =>{
-        setdisplayrt(state);
-        setdisplaywt(state);
-        setdisplaywp(state);
+        setdisplayrt(!state);
+        setdisplaywt(!state);
+        
+    }
+    const handlebyYear = state =>{
+        setdisplayrp(!state); 
+        setdisplaywp(!state);
     }
     console.log("display form handle", displayr);
     return (
@@ -34,9 +36,9 @@ const ListBooks = () => {
                 <details className="dropdown">
                     <summary className="m-1 btn bg-green-500">Short by <span className="text-2xl"><RiArrowDropDownLine /></span></summary>
                     <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                        <li onClick={()=>handlebyrating(false)}><a>rating</a></li>
-                        <li onClick={()=>handlebytotalpage(false)}><a>Number of pages</a></li>
-                        <li onClick={()=>handlebytotalpage(false)}><a>Publisher year</a></li>
+                        <li onClick={()=>handlebyrating(displayr)}><a>rating</a></li>
+                        <li onClick={()=>handlebytotalpage(displayrt)}><a>Number of pages</a></li>
+                        <li onClick={()=>handlebyYear(displayrp)}><a>Publisher year</a></li>
                     </ul>
                 </details>
             </div>
