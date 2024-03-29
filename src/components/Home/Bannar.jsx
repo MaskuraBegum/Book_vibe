@@ -7,7 +7,7 @@ const Bannar = () => {
             <div className='flex justify-center items-center '>
                 <div className='p-6 lg:p-12 space-y-10'>
                     <h1 className='text-2xl lg:text-6xl font-semibold w-full lg:w-[526px]'>Books to freshen up your bookshelf</h1>
-                    <Link to= '/listedBooks'><button className='btn bg-green-600 text-white py-4 px-6 text-xl h-16'>View The List</button></Link>
+                    <Link to= '/listedBooks'><button className='btn bg-green-600 text-white py-4 px-6 text-xl h-16 mt-6'>View The List</button></Link>
                 </div>
             </div>
             <div>

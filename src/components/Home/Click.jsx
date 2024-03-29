@@ -44,23 +44,23 @@ const Click = () => {
     }
     return (
         <div>
-            <div className="hero min-h-screen ">
-                <div className="hero-content flex-col lg:flex-row gap-12 px-12">
-                    <img src={book.image} className="max-w-sm rounded-xl shadow-2xl min-h-[580px] min-w-[500px]" />
+            <div className="hero min-h-screen min-w-screen ">
+                <div className="hero-content flex-col lg:flex-row gap-12 px-2 lg:px-12">
+                    <img src={book.image} className="max-w-sm rounded-xl shadow-2xl min-h-full lg:min-h-[580px] w-80 min-w-[200px] lg:min-w-[500px]" />
                     <div className="">
-                        <h1 className="text-5xl font-bold body-font">{book.bookName}</h1>
+                        <h1 className="text-2xl lg:text-5xl font-bold body-font">{book.bookName}</h1>
                         <p className="py-4 font-medium">By: {book.author}</p>
                         <hr className='border-1 border-dashed my-2' />
                         <p>{book.category}</p>
                         <hr className='border-1 border-dashed my-2' />
-                        <p > <span className="font-bold">Review:</span>{book.review}</p>
-                        <div className="flex gap-3 my-4 font-bold items-center"> Tags:
+                        <p className="w-80 lg:w-full"> <span className="font-bold">Review:</span>{book.review}</p>
+                        <div className="flex gap-1 lg:gap-3 my-4 font-bold items-center"> Tags:
                             {
                                 book.tags.map((tag, idx) => <Tag key={idx} tag={tag}></Tag>)
                             }
                         </div>
                         <hr className='border-1 border-dashed my-2' />
-                        <div className="grid grid-cols-2 pr-52">
+                        <div className="grid grid-cols-2 pr-0 lg:pr-52">
                             <p>Number of page</p><span className="font-semibold">: {book.totalPages}</span>
                             <p>Publisher</p> <span className="font-semibold">: {book.publisher}</span>
                             <p>Year of publish</p> <span className="font-semibold">: {book.yearOfPublishing}</span>

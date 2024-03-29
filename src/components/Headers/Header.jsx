@@ -46,9 +46,9 @@ const Header = () => {
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end space-x-4">
-                    <a className="btn bg-green-400  text-white">Sign In</a>
-                    <a className="btn bg-blue-400  text-white">Sign Up</a>
+                <div className="navbar-end space-x-1 lg:space-x-4">
+                    <a className="btn bg-green-400  text-white px-2 lg:px-6">Sign In</a>
+                    <a className="btn bg-blue-400  text-white px-2 lg:px-6">Sign Up</a>
                 </div>
             </div>
         </div>
