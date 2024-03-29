@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       {
         path:'/coming',
         element:<Coming></Coming>,
-        loader:()=> fetch('../public/coming.json'),
+        loader:()=> fetch('./coming.json'),
       },
       {
         path:'/question',
