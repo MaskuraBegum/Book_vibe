@@ -32,16 +32,6 @@ Access the live website here: [Book Vibe](https://poetic-kangaroo-c2c3bd.netlify
 
 ---
 
-## Installation & Setup
-
-To run the project locally, follow these steps:
-
-### Prerequisites
-- Node.js installed on your system.
-
-### Steps:
-
-1. **Clone the repository**:
+## Installation
    ```bash
-   git clone https://github.com/your-username/book-vibe.git
-   cd book-vibe
+   git clone https://github.com/MaskuraBegum/Book_vibe
