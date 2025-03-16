@@ -1,6 +1,6 @@
 Book vibe
  
-[Live link](https://poetic-kangaroo-c2c3bd.netlify.app/question)
+[Live link](https://poetic-kangaroo-c2c3bd.netlify.app/)
 
 ## Features
 - There are 5 routes in the website. (Home,Listed Books,Pages to Read, Coming soon, Any question?)
